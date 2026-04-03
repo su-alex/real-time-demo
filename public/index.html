@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Nexus | Real-time Timezone</title>
+    <!-- Use Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <main class="glass-container">
+        <header>
+            <h1>TIME FLUX</h1>
+            <p class="subtitle">SYNCHRONIZED WITH YOUR LOCAL ORBIT</p>
+        </header>
+
+        <section class="clock-display">
+            <div class="time-wrapper">
+                <span id="hours">00</span><span class="colon">:</span><span id="minutes">00</span><span class="colon">:</span><span id="seconds">00</span>
+            </div>
+            <div class="date-wrapper" id="current-date">
+                Loading date...
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="timezone-info">
+            <div class="label">DETECTED TIMEZONE</div>
+            <div class="zone-name" id="timezone-name">Detecting...</div>
+            <div class="zone-offset" id="timezone-offset">UTC +0</div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
