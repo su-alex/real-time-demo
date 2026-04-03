@@ -18,7 +18,7 @@ body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-main);
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,15 +28,16 @@ body {
 
 /* Dynamic Animated Background */
 .background-animation {
-  position: absolute;
+  position: fixed;
   top: -50%;
   left: -50%;
-  width: 200%;
-  height: 200%;
+  width: 200vw;
+  height: 200vh;
   background: radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 40%),
               radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 30%);
   z-index: 1;
   animation: rotateBg 30s linear infinite;
+  pointer-events: none;
 }
 
 @keyframes rotateBg {
@@ -101,6 +102,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: baseline;
+  font-variant-numeric: tabular-nums;
 }
 
 #minutes, #seconds {
